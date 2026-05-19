@@ -3,7 +3,7 @@ export default function Home() {
     <main style={{ padding: 24, fontFamily: "Arial", background: "#0b0f19", minHeight: "100vh", color: "white" }}>
       
       <header style={{ marginBottom: 24 }}>
-        <h1 style={{ fontSize: 32 }}>🎳 Bowling Fin League</h1>
+       <h1 style={{ fontSize: 40 }}>🎳 4 the 10 Pin</h1>
         <p style={{ opacity: 0.7 }}>
           League Dashboard • Matchups • Scores • Standings
         </p>
