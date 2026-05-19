@@ -1,7 +1,15 @@
+import { supabase } from "@/lib/supabaseClient";
+
 export default async function Home() {
-  const result = await supabase.from("bowlers").select("*");
+  const { data, error } = await supabase.from("bowlers").select("*");
 
   return (
-    <pre>{JSON.stringify(result, null, 2)}</pre>
+    <main style={{ padding: 20 }}>
+      <h1>🎳 4 the 10 Pin</h1>
+
+      <h2>Bowlers (Database Test)</h2>
+
+      <pre>{JSON.stringify({ data, error }, null, 2)}</pre>
+    </main>
   );
 }
